@@ -1,6 +1,22 @@
 {
-  "commit": "524d0503295fd58f16d1a38484098719c3003837",
-  "generated": "2025-04-23T03:18:40.887Z",
+  "commit": "ca14cfc5ce23246d2c7bb15193498f11ed1ea9a2",
+  "generated": "2025-04-23T03:19:37.273Z",
   "metadata": [
+    {
+      "__outstatic": {
+        "commit": "ca14cfc5ce23246d2c7bb15193498f11ed1ea9a2",
+        "hash": "2860303633",
+        "path": "outstatic/content/developers/getting-started.mdx"
+      },
+      "author": {
+        "name": "Max Murray",
+        "picture": "https://avatars.githubusercontent.com/u/78588986?v=4"
+      },
+      "collection": "developers",
+      "publishedAt": "2025-04-23T04:00:45.175Z",
+      "slug": "getting-started",
+      "status": "published",
+      "title": "Getting Started"
+    }
   ]
 }
