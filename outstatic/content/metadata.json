@@ -1,6 +1,6 @@
 {
-  "commit": "c6aa9f54b7d22a8d6c2dcde2619d7ec0ce9f4139",
-  "generated": "2025-04-23T03:50:01.107Z",
+  "commit": "8ef6cfc1627f474e556b8f503f93d78e9fa1104d",
+  "generated": "2025-04-23T03:50:26.820Z",
   "metadata": [
     {
       "__outstatic": {
@@ -81,6 +81,22 @@
       "slug": "workspace-script",
       "status": "published",
       "title": "Workspace Script"
+    },
+    {
+      "__outstatic": {
+        "commit": "8ef6cfc1627f474e556b8f503f93d78e9fa1104d",
+        "hash": "3911239416",
+        "path": "outstatic/content/docs/dependencies.mdx"
+      },
+      "author": {
+        "name": "Max Murray",
+        "picture": "https://avatars.githubusercontent.com/u/78588986?v=4"
+      },
+      "collection": "docs",
+      "publishedAt": "2025-04-23T04:32:17.972Z",
+      "slug": "dependencies",
+      "status": "published",
+      "title": "Dependencies"
     }
   ]
 }

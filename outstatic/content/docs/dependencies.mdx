@@ -1,0 +1,35 @@
+---
+title: "Dependencies"
+publishedAt: "2025-04-23T04:32:17.972Z"
+status: "published"
+author:
+  name: "Max Murray"
+  picture: "https://avatars.githubusercontent.com/u/78588986?v=4"
+slug: "dependencies"
+---
+
+# Dependencies management
+
+ 
+
+## Install new dependencies
+
+### Shared dependencies
+
+Usually, we use `pnpm` to manage dependencies. To install new dependencies, use command:
+
+```bash
+pnpm install <package-name> [install-options]
+```
+
+Then, `pnpm` will install the package and save it to root `package.json` file that will share to all workspaces.
+
+### Workspace dependencies
+
+To install package to specific workspace use option `filter` (not share to another workspace) and follow by workspace name:
+
+```bash
+pnpm install <package-name> [install-options] --filter <workspace-name>
+```
+
+> NOTE: Workspace name is the name in `package.json` in that workspace.
