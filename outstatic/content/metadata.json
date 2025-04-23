@@ -1,6 +1,22 @@
 {
-  "commit": "615205a4b712eeafedd9426ed0d67bad145af6a7",
-  "generated": "2025-04-23T02:57:16.628Z",
+  "commit": "3bf1cc321f7f9b9cc1a153128f42fdd080fc498e",
+  "generated": "2025-04-23T02:59:19.127Z",
   "metadata": [
+    {
+      "__outstatic": {
+        "commit": "3bf1cc321f7f9b9cc1a153128f42fdd080fc498e",
+        "hash": "149319445",
+        "path": "outstatic/content/docs/sad.mdx"
+      },
+      "author": {
+        "name": "Max Murray",
+        "picture": "https://avatars.githubusercontent.com/u/78588986?v=4"
+      },
+      "collection": "docs",
+      "publishedAt": "2025-04-23T03:40:49.065Z",
+      "slug": "sad",
+      "status": "published",
+      "title": ""
+    }
   ]
 }
