@@ -10,5 +10,11 @@
     "slug": "developers",
     "path": "outstatic/content/developers",
     "children": []
+  },
+  {
+    "title": "Knowledges",
+    "slug": "knowledges",
+    "path": "outstatic/content/knowledges",
+    "children": []
   }
 ]
