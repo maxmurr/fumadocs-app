@@ -1,10 +1,10 @@
 {
-  "commit": "3bf1cc321f7f9b9cc1a153128f42fdd080fc498e",
-  "generated": "2025-04-23T02:59:19.127Z",
+  "commit": "",
+  "generated": "Wed, 23 Apr 2025 03:03:01 GMT",
   "metadata": [
     {
       "__outstatic": {
-        "commit": "3bf1cc321f7f9b9cc1a153128f42fdd080fc498e",
+        "commit": "206c071168bfdfe9942f3ee676eaad9dac171c4b",
         "hash": "149319445",
         "path": "outstatic/content/docs/sad.mdx"
       },
