@@ -1,6 +1,6 @@
 {
-  "commit": "d160710e7b0db6a320f23b01d536e744d073aaa7",
-  "generated": "2025-04-23T03:26:03.317Z",
+  "commit": "ee52ae88eb130b69336022f91ff2dec6eea8268f",
+  "generated": "2025-04-23T03:49:21.016Z",
   "metadata": [
     {
       "__outstatic": {
@@ -49,6 +49,22 @@
       "slug": "index",
       "status": "published",
       "title": "Getting Started"
+    },
+    {
+      "__outstatic": {
+        "commit": "ee52ae88eb130b69336022f91ff2dec6eea8268f",
+        "hash": "3903737854",
+        "path": "outstatic/content/docs/workspace.mdx"
+      },
+      "author": {
+        "name": "Max Murray",
+        "picture": "https://avatars.githubusercontent.com/u/78588986?v=4"
+      },
+      "collection": "docs",
+      "publishedAt": "2025-04-23T04:30:15.681Z",
+      "slug": "workspace",
+      "status": "published",
+      "title": "Workspace"
     }
   ]
 }
