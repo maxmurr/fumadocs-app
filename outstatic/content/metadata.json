@@ -1,38 +1,6 @@
 {
-  "commit": "",
-  "generated": "Wed, 23 Apr 2025 03:12:53 GMT",
+  "commit": "524d0503295fd58f16d1a38484098719c3003837",
+  "generated": "2025-04-23T03:18:40.887Z",
   "metadata": [
-    {
-      "__outstatic": {
-        "commit": "bfefa52c154ca2479af8db073c6d1147c4c961e8",
-        "hash": "2136436134",
-        "path": "outstatic/content/docs/sad.mdx"
-      },
-      "author": {
-        "name": "Max Murray",
-        "picture": "https://avatars.githubusercontent.com/u/78588986?v=4"
-      },
-      "collection": "docs",
-      "publishedAt": "2025-04-23T03:40:49.065Z",
-      "slug": "sad",
-      "status": "published",
-      "title": "Wow"
-    },
-    {
-      "__outstatic": {
-        "commit": "1980cdcd6e7240687b6a0f90ef4b90750a5ea12e",
-        "hash": "3648432000",
-        "path": "outstatic/content/docs/index.mdx"
-      },
-      "author": {
-        "name": "Max Murray",
-        "picture": "https://avatars.githubusercontent.com/u/78588986?v=4"
-      },
-      "collection": "docs",
-      "publishedAt": "2025-04-23T03:40:49.065Z",
-      "slug": "sad",
-      "status": "published",
-      "title": "Getting Started"
-    }
   ]
 }

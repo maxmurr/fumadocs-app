@@ -1,11 +1,5 @@
 [
   {
-    "title": "Docs",
-    "slug": "docs",
-    "path": "outstatic/content/docs",
-    "children": []
-  },
-  {
     "title": "Developers",
     "slug": "developers",
     "path": "outstatic/content/developers",
