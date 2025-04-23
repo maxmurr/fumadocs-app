@@ -1,11 +1,210 @@
 ---
-title: "Getting Started"
+title: "Next.js 15 Documentation"
 publishedAt: "2025-04-23T03:40:49.065Z"
 status: "published"
 author:
   name: "Max Murray"
   picture: "https://avatars.githubusercontent.com/u/78588986?v=4"
-slug: "sad"
+slug: "nextjs-15-docs"
 ---
 
-Hello World Test Index
+# Next.js 15 Documentation
+
+Next.js 15 introduces significant improvements in stability, performance, and developer experience. This comprehensive guide covers the major features and changes.
+
+## Core Updates
+
+### React 19 Support
+
+- Full support for React 19 in both Pages Router & App Router
+- Pages Router maintains backward **compatibility** with React 18
+- Includes React Compiler (Experimental) for automatic optimizations
+- Improved hydration error messages with source code context
+
+### Caching Changes
+
+- `fetch` requests, `GET` Route Handlers, and client navigations are no longer cached by default
+- Opt into caching using `force-cache` or `force-static`
+- Client Router Cache defaults to `staleTime: 0` for Page segments
+- Shared layout data won't be refetched to support partial rendering
+
+### Turbopack Improvements
+
+- Stable for local development with `next dev --turbo`
+- Alpha release of `next build --turbopack` for production builds
+- Significant performance improvements:
+  - Up to 76.7% faster local server startup
+  - Up to 96.3% faster code updates with Fast Refresh
+  - Up to 45.8% faster initial route compile
+
+## New Features
+
+### Static Route Indicator
+
+- Visual indicator during development for static/dynamic routes
+- Helps identify rendering strategies for performance optimization
+- Can be disabled if not needed
+
+### next/after API (Stable)
+
+```typescript
+import { after } from "next/server";
+
+export default function Layout({ children }) {
+  after(() => {
+    // Execute after response streaming
+    analytics.track();
+  });
+  return children;
+}
+```
+
+### Enhanced Form Component
+
+```typescript
+import Form from "next/form";
+
+export default function SearchPage() {
+  return (
+    <Form action="/search">
+      <input name="query" />
+      <button type="submit">Search</button>
+    </Form>
+  );
+}
+```
+
+### TypeScript Support
+
+- Native support for `next.config.ts`
+- Improved TypeScript plugin performance
+- Enhanced type safety and autocompletion
+
+## Breaking Changes
+
+### Async Request APIs
+
+The following APIs are now asynchronous:
+
+- `cookies()`
+- `headers()`
+- `draftMode()`
+- `params` in layout/page files
+- `searchParams` in page files
+
+Migration codemod available:
+
+```bash
+npx @next/codemod@canary next-async-request-api .
+```
+
+### Other Breaking Changes
+
+- Minimum React version is now 19 RC
+- Removed `squoosh` in favor of `sharp` for image optimization
+- Changed default `Content-Disposition` to `attachment`
+- Removed support for external `@next/font` package
+- Minimum Node.js version updated to 18.18.0
+
+## Development Experience
+
+### Error Debugging
+
+- Enhanced source maps with better error tracing
+- Collapsed stack frames for clearer error messages
+- Improved profiling capabilities
+- Consistent error display across environments
+
+### create-next-app Updates
+
+- New modern design
+- Optional Turbopack enablement
+- New `--empty` flag for minimal setup
+- Default `.env` file ignoring
+
+## Performance Optimizations
+
+### Bundling Improvements
+
+```typescript
+// next.config.ts
+const nextConfig = {
+  bundlePagesRouterDependencies: true,
+  serverExternalPackages: ["package-name"],
+};
+
+export default nextConfig;
+```
+
+### Static Generation
+
+- Optimized build times for pages with slow network requests
+- Shared fetch cache across pages
+- New experimental controls for advanced use cases
+
+## Security Enhancements
+
+### Server Actions
+
+- Dead code elimination for unused Server Actions
+- Unguessable, non-deterministic action IDs
+- Periodic ID recalculation between builds
+
+## Migration Guide
+
+1. Update dependencies:
+
+```bash
+npx @next/codemod@canary upgrade latest
+```
+
+2. Review caching strategy:
+
+- Explicitly set `cache: 'force-cache'` where needed
+- Update Route Handler caching configuration
+- Adjust Client Router Cache settings if required
+
+3. Update async APIs:
+
+- Use the codemod to convert to async APIs
+- Update error handling for async operations
+- Test thoroughly after migration
+
+4. Check breaking changes:
+
+- Verify React 19 compatibility
+- Update image optimization configuration
+- Review font implementation
+- Update Node.js version if needed
+
+## Best Practices
+
+1. **Server Components**:
+
+- Use Server Components by default
+- Add `'use client'` only at client-server boundaries
+- Leverage streaming capabilities
+
+2. **Caching Strategy**:
+
+- Explicitly define caching behavior
+- Use appropriate cache duration for different content types
+- Implement revalidation where needed
+
+3. **Performance**:
+
+- Enable Turbopack for development
+- Implement proper code splitting
+- Optimize image loading
+
+4. **Security**:
+
+- Secure Server Actions implementation
+- Proper authentication handling
+- Environment variable protection
+
+## Additional Resources
+
+- [Official Next.js Documentation](https://nextjs.org/docs)
+- [Next.js GitHub Repository](https://github.com/vercel/next.js)
+- [Next.js Discord Community](https://discord.gg/nextjs)
