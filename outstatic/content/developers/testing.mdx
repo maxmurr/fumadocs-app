@@ -1,0 +1,28 @@
+---
+title: "Testing"
+publishedAt: "2025-04-23T04:02:11.023Z"
+status: "published"
+author:
+  name: "Max Murray"
+  picture: "https://avatars.githubusercontent.com/u/78588986?v=4"
+slug: "testing"
+---
+
+# Testing
+
+ 
+
+## Manual Testing
+
+When testing features that involve brand creation, follow these conventions:
+
+- Create test brands with the `testpb-` prefix in the slug (e.g., `testpb-my-test-brand`)
+- This prefix helps identify test data and can be used to filter or clean up test brands if needed
+
+## Test Data Isolation
+
+To ensure test data doesn't impact customer brands:
+
+- Never modify or delete customer brands during testing
+- Always use the `testpb-` prefix for any test brands, users, or data
+- When testing features that interact with existing data, create new test brands instead of using customer brands

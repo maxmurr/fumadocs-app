@@ -1,6 +1,6 @@
 {
-  "commit": "ca14cfc5ce23246d2c7bb15193498f11ed1ea9a2",
-  "generated": "2025-04-23T03:19:37.273Z",
+  "commit": "a3284bc4d9430b17080015362f36292b1bfdd71d",
+  "generated": "2025-04-23T03:20:45.575Z",
   "metadata": [
     {
       "__outstatic": {
@@ -17,6 +17,22 @@
       "slug": "getting-started",
       "status": "published",
       "title": "Getting Started"
+    },
+    {
+      "__outstatic": {
+        "commit": "a3284bc4d9430b17080015362f36292b1bfdd71d",
+        "hash": "1152562433",
+        "path": "outstatic/content/developers/testing.mdx"
+      },
+      "author": {
+        "name": "Max Murray",
+        "picture": "https://avatars.githubusercontent.com/u/78588986?v=4"
+      },
+      "collection": "developers",
+      "publishedAt": "2025-04-23T04:02:11.023Z",
+      "slug": "testing",
+      "status": "published",
+      "title": "Testing"
     }
   ]
 }
