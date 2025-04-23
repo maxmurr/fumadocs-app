@@ -1,6 +1,6 @@
 {
-  "commit": "8ef6cfc1627f474e556b8f503f93d78e9fa1104d",
-  "generated": "2025-04-23T03:50:26.820Z",
+  "commit": "4dbff831ba2433b9a0b1bc3f30c5c704dd3a3386",
+  "generated": "2025-04-23T03:55:20.119Z",
   "metadata": [
     {
       "__outstatic": {
@@ -97,6 +97,22 @@
       "slug": "dependencies",
       "status": "published",
       "title": "Dependencies"
+    },
+    {
+      "__outstatic": {
+        "commit": "4dbff831ba2433b9a0b1bc3f30c5c704dd3a3386",
+        "hash": "1641707641",
+        "path": "outstatic/content/docs/term-of-service.mdx"
+      },
+      "author": {
+        "name": "Max Murray",
+        "picture": "https://avatars.githubusercontent.com/u/78588986?v=4"
+      },
+      "collection": "docs",
+      "publishedAt": "2025-04-23T04:37:07.809Z",
+      "slug": "term-of-service",
+      "status": "published",
+      "title": "Term of service"
     }
   ]
 }
