@@ -1,0 +1,45 @@
+---
+title: "Workspace Script"
+publishedAt: "2025-04-23T04:31:27.486Z"
+status: "published"
+author:
+  name: "Max Murray"
+  picture: "https://avatars.githubusercontent.com/u/78588986?v=4"
+slug: "workspace-script"
+---
+
+# Workspace scripts
+
+ 
+
+## Overview
+
+Workspace scripts are predefined commands in `package.json` that help automate common tasks, making it easier to manage the development workflow. Each workspace in the project has its own `package.json` file containing scripts to execute commands specific to that workspace. Note that you need to navigate to the appropriate workspace directory before running a script.
+
+### Turbo
+
+We use `turbo` to run scripts across all workspaces simultaneously. To enable this functionality, define the script in the root-level [package.json](/package.json) using the following format:
+
+```json
+{
+  "scripts": {
+    "<script_name>": "turbo <script_name>"
+  }
+}
+```
+
+Next, add the script name in the [turbo.json](/turbo.json) file so that Turbo knows which scripts to execute. For example:
+
+```json
+{
+  "tasks": {
+    "script_name": {
+      "cache": false
+    }
+  }
+}
+```
+
+> **Note:** You can configure additional settings, such as caching behavior, in the turbo.json file under the script name field.
+
+Finally, define the same script name in the `package.json` file of each workspace where you want the script to be executed. Make sure the script works correctly with the actual command (not turbo) in the workspace.
