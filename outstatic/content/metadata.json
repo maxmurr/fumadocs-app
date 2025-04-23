@@ -1,0 +1,28 @@
+{
+  "commit": "",
+  "generated": "Wed, 23 Apr 2025 02:56:54 GMT",
+  "metadata": [
+    {
+      "__outstatic": {
+        "commit": "",
+        "hash": "3798941993",
+        "path": "content/docs/test.mdx"
+      },
+      "collection": "docs",
+      "description": "Components",
+      "slug": "testx",
+      "title": "Components"
+    },
+    {
+      "__outstatic": {
+        "commit": "",
+        "hash": "2557272933",
+        "path": "content/docs/index.mdx"
+      },
+      "collection": "docs",
+      "description": "Your first document",
+      "slug": "indexx",
+      "title": "Hello World"
+    }
+  ]
+}
